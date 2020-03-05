@@ -22,7 +22,7 @@ void setup() {
   ast_2 = new Asteroid(-width/2, height * 0.8, -20, random(2,10), 5, 0.05);
   ast_3 = new Asteroid(-width * 0.1, height * 0.1, -20, random(2,10), 5, 0.05);
 
-  sun = new astronomicalObject(150, 0, 0, sunTexture); //27 days self rotatoin
+  sun = new astronomicalObject(150, 0, 270, sunTexture); //27 days self rotatoin
   earth = new Planet(30, 300, 10, earthTexture); //1 day self rotation
   moon = new Planet(10, 350, 280, moonTexture); //28 days self rotation
 }
