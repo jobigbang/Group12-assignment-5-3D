@@ -10,10 +10,12 @@ class Planet extends astronomicalObject {
   }
 
   void ortbitRotation() {
-    pushMatrix();
     angle += PI/300;
-    translate(distance,0);
     rotateY(angle);
+    translate(distance,0);
+    rotateY(-angle*5);
+    
+    shape(globe);
     
   }
   

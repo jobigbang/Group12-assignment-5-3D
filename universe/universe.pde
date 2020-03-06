@@ -39,14 +39,14 @@ void draw() {
   
   saturn.show();
   
+  pushMatrix();
   sun.show();
-  fill(255);
-  rect(0,0,50,50);
   
   //earth.tilt();
- //earth.ortbitRotation();
-  earth.show();
-      popMatrix();
+  earth.ortbitRotation();
+  //earth.show();
+  popMatrix();
+
 
   //moon.show();
   
