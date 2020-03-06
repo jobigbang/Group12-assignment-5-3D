@@ -38,6 +38,6 @@ class Asteroid {
     
     angle += rotateSpeed;
     x += xSpeed;
-    //y += ySpeed;
+    y += ySpeed;
   }
 }
