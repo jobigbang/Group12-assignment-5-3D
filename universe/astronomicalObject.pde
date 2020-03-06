@@ -4,7 +4,6 @@ class astronomicalObject  {
   float orbitSpeed;
   PShape globe;
 
-
   astronomicalObject(float radius, float distance, float orbitSpeed, PImage img) {
     this.radius = radius;
     this.distance = distance;

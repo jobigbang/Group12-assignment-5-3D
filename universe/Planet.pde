@@ -1,7 +1,6 @@
 class Planet extends astronomicalObject {
   float angle;
 
-
   Planet(float radius, float distance, float orbitSpeed, PImage img) {
     super(radius, distance, orbitSpeed, img);//inheritance
     angle = 0;
