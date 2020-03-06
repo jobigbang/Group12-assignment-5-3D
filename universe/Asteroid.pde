@@ -31,7 +31,7 @@ class Asteroid {
     rotateX(angle);
     //rotateZ(angle);
     scale(size);
-    
+    shapeMode(CENTER);
     shape(ast);
     
     popMatrix();
