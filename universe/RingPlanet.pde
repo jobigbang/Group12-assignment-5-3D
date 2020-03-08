@@ -5,6 +5,7 @@ class RingPlanet {
   FlatDisc ring_2;
   float angle = 0;
   float speed = 1;
+  float bChange = 1;
   
   RingPlanet (float x, float y, float z, float size, color c, color ringColor) {
     this.x = x;
@@ -30,8 +31,14 @@ class RingPlanet {
     
     popMatrix();
     
+    if (blue(c) >= 255) {
+      bChange *= -1;
+    } else if (blue(c) <= 0) {
+      bChange = abs(bChange);
+    }
     
-  
+    c = color (red(c), green(c), blue(c) + bChange);
+    
   }
 
 }
