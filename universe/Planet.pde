@@ -10,7 +10,7 @@ class Planet extends astronomicalObject {
   }
 
   void ortbitRotation() {
-    angle += PI/300;
+    angle += (PI/300)*orbitSpeed;
     rotateY(angle);
     translate(distance,0);
     rotateY(-angle*5);

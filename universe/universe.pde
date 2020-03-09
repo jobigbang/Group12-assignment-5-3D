@@ -34,8 +34,8 @@ void setup() {
   ast_3 = new Asteroid(-width * 0.1, height * 0.1, -500, random(2,10), 0.05);
 
   sun = new astronomicalObject(150, 0, width/2, height/2, 270, sunTexture); //27 days self rotatoin
-  earth = new Planet(30, 300, 500,  400, 10, earthTexture); //1 day self rotation
-  //moon = new Planet(10, 350, 500, 400, 280, moonTexture); //28 days self rotation
+  earth = new Planet(30, 300, 500,  400, 1, earthTexture); //1 day self rotation
+  moon = new Planet(10, 50, 500, 400, 28, moonTexture); //28 days self rotation
   
   saturn = new RingPlanet(width * 0.1, height/2, 0, 30, color(200, 150, 0), color(0, 100, 200));
 }
@@ -53,15 +53,10 @@ void draw() {
   saturn.show();
   
   pushMatrix();
-  sun.show();
-  
-  //earth.tilt();
-  earth.ortbitRotation();
-  //earth.show();
+    sun.show();
+    earth.ortbitRotation();
+    moon.ortbitRotation();
   popMatrix();
-
-
-  //moon.show();
 }
 
 void drawStars() {
