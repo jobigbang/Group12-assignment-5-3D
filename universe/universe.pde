@@ -11,8 +11,19 @@ Planet earth;
 Planet moon;
 RingPlanet saturn;
 
+int numOfStars = 30;
+Float [] starWeights = new Float[numOfStars];
+Float [] starPointsX = new Float[numOfStars];
+Float [] starPointsY = new Float[numOfStars];
+
 void setup() {
   size(1000, 800, P3D);
+  
+  for (int i = 0; i < numOfStars; i ++) {
+    starPointsX[i] = random(-width, 1.5*width);
+    starPointsY[i] = random(-height,1.5*height);
+    starWeights[i] = random(0, 20);
+  }
 
   sunTexture = loadImage("sun.jpg");
   earthTexture = loadImage("earth.jpg");
@@ -29,8 +40,10 @@ void setup() {
   saturn = new RingPlanet(width * 0.1, height/2, 0, 30, color(200, 150, 0), color(0, 100, 200));
 }
 
+
 void draw() {
   background(0);
+  drawStars();
   pointLight(255, 255, 255, 400, 400, 400);
 
   ast_1.show();
@@ -49,6 +62,14 @@ void draw() {
 
 
   //moon.show();
+}
+
+void drawStars() {
   
+  for (int i = 0; i < numOfStars; i++) {
+    strokeWeight(starWeights[i]);
+    stroke(255);
+    point(starPointsX[i], starPointsY[i], -600);
+  }
   
 }

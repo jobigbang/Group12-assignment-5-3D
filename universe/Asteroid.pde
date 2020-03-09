@@ -27,8 +27,8 @@ class Asteroid {
     pushMatrix();
 
     translate(x, y, z);
-    rotateY(angle); //self-rotation
-    rotateX(angle);
+    //rotate(angle); //self-rotation
+    //rotateX(angle);
     //rotateZ(angle);
     scale(size);
     shapeMode(CENTER);
