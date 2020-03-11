@@ -51,7 +51,7 @@ void setup() {
 void draw() {
   background(0);
   drawStars();
-  pointLight(255, 255, 255, 400, 400, 400);
+  sun.light();
   
   pushMatrix();
     if (frameCount%120 == 0) {
