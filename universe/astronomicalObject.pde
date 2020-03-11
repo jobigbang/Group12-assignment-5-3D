@@ -30,7 +30,7 @@ class astronomicalObject  {
   }
   
   void light() {
-    glow += PI/100;
+    glow += PI/30;
     light = abs(sin(glow)*55);
     pointLight(255-light, 255-light, 255-light, xloc, yloc, 270);
     
