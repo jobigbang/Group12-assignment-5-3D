@@ -10,10 +10,9 @@ The animation is about the universe space, including the sun, the earth, the moo
 All the planet objects are self-rotating while the moon is also rotating around the earth and the earth is rotating around the sun.
 
 
-
 The asteroid falls randomly to make it looks like a real universe.
 
 
-Declare - orbitRotation function in the Planet class
+Declan - got the planets to revolve in show() function, light function in astronomicalObject, ShootingStar
 Jeff - Asteroid, RingPlanet
 Jenny - astronomicalObject, Planet
