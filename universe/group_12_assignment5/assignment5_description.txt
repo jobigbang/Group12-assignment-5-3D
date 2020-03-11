@@ -1,0 +1,21 @@
+Assignment 5 - group 12 - description
+The Universe
+
+** extra credit **
+
+
+The animation is about the universe space, including the sun, the earth, the moon, the saturn, and stars.
+
+
+All the planet objects are self-rotating while the moon is also rotating around the earth and the earth is rotating around the sun.
+
+
+The sun has a varying glow to add more lighting effect.
+
+
+The asteroids fall randomly to make it looks like a real universe. These asteroids are obj files.
+
+
+Declan - got the planets to revolve in show() and draw(), light() function in astronomicalObject, ShootingStar
+Jeff - Asteroid, RingPlanet, added randomly appearing stars
+Jenny - astronomicalObject, Planet, came up with the outline of the project
