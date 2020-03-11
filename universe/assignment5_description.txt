@@ -1,0 +1,19 @@
+Assignment 5 - group 12 - description
+The Universe
+
+** extra credit **
+
+
+The animation is about the universe space, including the sun, the earth, the moon, the saturn, and stars.
+
+
+All the planet objects are self-rotating while the moon is also rotating around the earth and the earth is rotating around the sun.
+
+
+
+The asteroid falls randomly to make it looks like a real universe.
+
+
+Declare - orbitRotation function in the Planet class
+Jeff - Asteroid, RingPlanet
+Jenny - astronomicalObject, Planet
