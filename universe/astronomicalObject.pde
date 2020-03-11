@@ -23,7 +23,7 @@ class astronomicalObject  {
 
   void show() {
     translate(width/2 + distance, height/2);
-    //rotateY(frameCount/orbitSpeed); //self-rotation
+    rotateY(frameCount/orbitSpeed); //self-rotation
     shapeMode(CORNER);
     shape(globe);
 
